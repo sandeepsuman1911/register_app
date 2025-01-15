@@ -53,6 +53,7 @@ pipeline {
             steps {
                 script {
                     sh "cp target/*.war ."
+                    sh "ls -l"
                 }
             }
         }
