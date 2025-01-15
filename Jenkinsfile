@@ -10,7 +10,7 @@ pipeline {
         DOCKER_USER = "devopsuser1911"
         DOCKER_PASS = "dockerhub"
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
-        IAMGE_TAEG = "${RELEASE}-${BUILD_NUMBER}"
+        IAMGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
     }
     stages {
         stage("Cleanup Workspace"){
