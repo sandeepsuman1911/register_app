@@ -49,14 +49,6 @@ pipeline {
                 }
             }
         }
-        stage("Prepare Docker Context") {
-            steps {
-                script {
-                    sh "cp target/*.war ."
-                    sh "ls -l"
-                }
-            }
-        }
         stage("Build & Push Docker Image"){
             steps {
                 script {
